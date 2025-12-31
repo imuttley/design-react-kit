@@ -723,7 +723,7 @@ export const loadIcon = (name: IconName) => {
       return import('./ItZoomOut');
     }
     case 'it-enea': {
-      return import('./ItEnea');
+      return import('./ItENEA');
     }
     case 'it-enea2': {
       return import('./ItEnea2');
