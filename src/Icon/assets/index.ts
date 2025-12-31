@@ -44,6 +44,7 @@ const iconList: Record<string, boolean> = {
   'it-designers-italia': true,
   'it-download': true,
   'it-enea': true,
+  'enea': true,
   'it-error': true,
   'it-exchange-circle': true,
   'it-expand': true,
@@ -722,7 +723,13 @@ export const loadIcon = (name: IconName) => {
       return import('./ItZoomOut');
     }
     case 'it-enea': {
-      return import('./ItENEA');
+      return import('./ItEnea');
+    }
+    case 'it-enea2': {
+      return import('./ItEnea2');
+    }
+    case 'enea': {
+      return import('./ItEnea2');
     }
     default:
       throw Error(`It should not land here. Requested icon: "${name}"`);

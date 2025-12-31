@@ -96,6 +96,7 @@ export const Icon: FC<IconProps> = ({
 
   if (!isBundledIcon(icon)) {
     // assume it's an image and let the browser do its job
+    console.log('icon not found: ', icon);
     return (
       <img
         src={icon}
