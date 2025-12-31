@@ -54,12 +54,13 @@ export const HeaderBrand = ({
         {iconName && <Icon icon={iconName} title={iconAlt} />}
         <div className='it-brand-text'>
           {React.Children.map(children, (child, i) => {
-            if (typeof child !== 'object' || child == null || !('props' in child)) {
+            if (!React.isValidElement(child)) {
               return child;
             }
             // convention here: first item is the main title, while others subtext
+            const childProps = child.props as { className?: string };
             const className = classNames(
-              child.props.className,
+              childProps.className,
               { 'd-none d-md-block': i } // subtext is anything but first element
             );
 
@@ -67,7 +68,7 @@ export const HeaderBrand = ({
               className
             };
 
-            return React.cloneElement(child, props);
+            return React.cloneElement(child as React.ReactElement, props);
           })}
         </div>
       </a>

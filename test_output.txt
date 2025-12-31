@@ -1,0 +1,105 @@
+
+> design-react-kit@5.9.2 test
+> jest ./src ./test --passWithNoTests
+
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+FAIL test/Notification.test.tsx
+  ÔùÅ Test suite failed to run
+
+    test/Notification.test.tsx:103:70 - error TS2339: Property 'toThrowError' does not exist on type 'AndNot<Matchers<Promise<void>, Promise<void>>>'.
+
+    103       await expect(waitForNotificationToDisappear(/coucou/)).rejects.toThrowError();
+                                                                             ~~~~~~~~~~~~
+    test/Notification.test.tsx:225:57 - error TS2339: Property 'toThrowError' does not exist on type 'AndNot<Matchers<Promise<void>, Promise<HTMLElement[]>>>'.
+
+    225       await expect(screen.findAllByRole('img')).rejects.toThrowError();
+                                                                ~~~~~~~~~~~~
+
+PASS test/utils.test.tsx (44.158 s)
+FAIL test/Storybook.test.tsx
+  ÔùÅ Test suite failed to run
+
+    test/Storybook.test.tsx:2:57 - error TS2307: Cannot find module '@storybook/react' or its corresponding type declarations.
+
+    2 import { composeStories, type Meta, type StoryFn } from '@storybook/react';
+                                                              ~~~~~~~~~~~~~~~~~~
+    test/Storybook.test.tsx:53:34 - error TS18046: 'story' is of type 'unknown'.
+
+    53           const mounted = render(story());
+                                        ~~~~~
+
+PASS test/NavScroll.test.tsx (24.552 s)
+
+
+#
+# Fatal process out of memory: Zone
+#
+----- Native stack trace -----
+
+
+
+#
+# Fatal process out of memory: Zone
+#
+----- Native stack trace -----
+
+
+
+#
+# Fatal process out of memory: Zone
+#
+----- Native stack trace -----
+
+ 1: 00007FF6516D1477 
+ 2: 00007FF6515A20DF 
+ 3: 00007FF6528A0866 
+ 4: 00007FF6522272B1 
+ 5: 00007FF651D09CBB 
+ 6: 00007FF651A77CAC 
+ 7: 00007FF651A81307 
+ 8: 00007FF652D9A0B2 
+ 9: 00007FF6529C0E82 
+10: 00007FF6529BAC9A 
+11: 00007FF6521A45E4 
+12: 00007FF65216B1C2 
+13: 00007FF65242C116 
+14: 00007FF6515A4E80 
+15: 00007FF651731483 
+16: 00007FF652FB8E9B 
+17: 00007FF84FDCE8D7 
+18: 00007FF85010C53C 

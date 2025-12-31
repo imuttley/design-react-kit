@@ -27,7 +27,7 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
   const otherComponents: React.ReactNode[] = [];
   const childrenSource = React.Children.map(children, (child) => {
     if (React.isValidElement(child) && child.type === Item) {
-      const { id, children } = child.props;
+      const { id, children } = child.props as { id: string; children: React.ReactNode };
       return { id, content: children };
     }
     otherComponents.push(child);

@@ -34,7 +34,7 @@ export const TabNav: FC<TabNavProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const rootRef = useRef<HTMLInputElement>();
+  const rootRef = useRef<HTMLDivElement>(null);
 
   const classes = classNames(
     className,

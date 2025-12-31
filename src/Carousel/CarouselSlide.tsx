@@ -1,8 +1,8 @@
 import React from 'react';
-import {SplideSlide} from '@splidejs/react-splide'
+import { SplideSlide } from '@splidejs/react-splide'
 
 // Splide wrapper
-export const CarouselSlide: React.FC<JSX.IntrinsicElements['li']> = ({
+export const CarouselSlide: React.FC<React.JSX.IntrinsicElements['li']> = ({
   children,
 }) => {
 
