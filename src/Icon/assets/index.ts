@@ -720,6 +720,9 @@ export const loadIcon = (name: IconName) => {
     case 'it-zoom-out': {
       return import('./ItZoomOut');
     }
+    case 'it-enea': {
+      return import('./ItENEA');
+    }
     default:
       throw Error(`It should not land here. Requested icon: "${name}"`);
   }
