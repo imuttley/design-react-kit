@@ -11,7 +11,6 @@ export const component = ({ title, titleId, ...props }: SVGProps<SVGSVGElement> 
       aria-labelledby={titleId}
       {...props}
     >
-
       {title ? <title id={titleId}>{title}</title> : null}
       <polygon points="751.35,310.72 836.37,310.72 724.82,182.96 724.82,362.42 492.9,362.42 492.46,361.91 336.19,182.96 
 	336.19,362.42 103.83,362.42 103.83,103.83 258.99,103.83 258.99,155.56 155.56,155.56 155.56,207.83 233.14,207.83 233.14,259.56 
