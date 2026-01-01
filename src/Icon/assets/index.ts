@@ -134,6 +134,7 @@ const iconList: Record<string, boolean> = {
   'it-print': true,
   'it-quora-square': true,
   'it-quora': true,
+  'react': true,
   'it-reddit-square': true,
   'it-reddit': true,
   'it-refresh': true,
@@ -724,6 +725,9 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-enea': {
       return import('./ItEnea');
+    }
+    case 'react': {
+      return import('./React');
     }
     default:
       throw Error(`It should not land here. Requested icon: "${name}"`);
